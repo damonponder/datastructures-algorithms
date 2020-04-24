@@ -20,6 +20,14 @@ Devise a plan to solve Algorithms
 
     - Master common problem solving patterns
 
+    - PROBLEM SOLVING
+
+        - Understand the problem
+        -Explore concrete Examples
+        -Break it Down
+        -Solve/Simplify
+        -Look Back and Refactor
+
 Compare and Contrast problem solving patterns
 including frequency counters, two pointer
 problems and divide and conquer 
