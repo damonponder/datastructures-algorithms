@@ -88,3 +88,55 @@ function sameFrequency (num1, num2) {
 
     return true;
 }
+
+function sameFrequency2 (num3, num4) {
+    let strNum3 = num3.toString();
+    let strNum4 = num4.toString();
+
+    if(strNum3.length != strNum4.length) return false;
+
+    counter1 = {};
+    counter2 = {};
+
+    for(var i = 0; i < strNum1.length; i++ ) {
+        countNum1[strNum3[i]] = (countNum1[strNum3[i]] || 0) + 1
+    }
+
+    for(var j = 0; j < strNum2.length; j++) {
+        countNum2[strNum4[j]] = (countNum2[strNum4[j]] || 0) + 1
+    }
+
+    for(key in countNum1) {
+        if (countNum1[key] !== countNum2[key]) return false
+    }
+    return true;
+}
+
+// Frequency Counter / Multiple Pointers - areThereDuplicates
+
+/*
+
+Implement a function called, areThereDuplicates which accepts 
+a variable number of arguments, and checks whether there are 
+any duplicates among the arguments passed in. You can solve 
+this using the frequency counter pattern OR the multiple pointers
+pattern.
+
+
+*/
+
+function areThereDuplicates (arg1) {
+    let strArg1 = arg1.toString();
+
+    let collection = {}
+
+    for (let i = 0; i < strArg1.length; i++) {
+        collection[strArg1[i]] = (collection[strArg1[i]] || 0) + 1
+    }
+
+    for (let key in collection) {
+        if (collection[key] > 1) return true
+    }
+    return false;
+    
+}
